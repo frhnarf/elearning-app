@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.centralkreasi.farhan.elearning">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logobuku"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!-- Splash screen -->
+
+
+        <activity android:name="SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"
+            android:label="Login"/>
+        <activity android:name=".register"
+            android:label="Register"/>
+        <activity android:name=".MenuActivity"
+            android:label="Menu"/>
+        <activity android:name=".profile"
+            android:label="MyProfile"/>
+        <activity android:name=".animal"
+            android:label="Animal"/>
+        <activity android:name=".MotivasiActivity"
+            android:label="Motivate"/>
+        <activity android:name=".MembacaActivity"
+            android:label="English Reading"/>
+        <activity android:name=".VideoActivity"
+            android:label="Video"/>
+    </application>
+
+</manifest>
